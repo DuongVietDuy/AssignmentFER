@@ -10,8 +10,7 @@ const EmployeeProvider = ({ children }) => {
   const [selectedDepartment, setSelectedDepartment] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const [cart, setCart] = useState([]);
-  const [employeeCart, setEmployeeCart] = useState([]);
+
 
   useEffect(() => {
     const fetchData = async () => {
