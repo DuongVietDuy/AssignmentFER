@@ -1,0 +1,22 @@
+{
+  "device": [
+    { "id": 1, "name": "PC" },
+    { "id": 2, "name": "Laptop" },
+    { "id": 3, "name": "Smartphone" }
+  ],
+  "products": [
+    { "id": 1, "name": "Dell UltraSharp", "price": 350, "deviceID": 1, "brand": "Dell", "model": "U2720Q", "image": "https://product.hstatic.net/200000722513/product/dell_u3223qe_gearvn_75ec91ad41fa45698af4ddf74f3e40ce_d7ad4bb834364029843aac9c1c39e9f1_1024x1024.jpg", "specifications": { "screenSize": "27 inches", "resolution": "4K" } },
+    { "id": 2, "name": "LG UltraWide", "price": 250, "deviceID": 1, "brand": "LG", "model": "34WN80C-B", "image": "https://www.lg.com/us/images/monitors/md08003261/gallery/D-1.jpg", "specifications": { "screenSize": "34 inches", "resolution": "WQHD" } },
+    { "id": 3, "name": "Samsung Odyssey", "price": 500, "deviceID": 1, "brand": "Samsung", "model": "G7", "image": "https://product.hstatic.net/1000333506/product/man-hinh-cong-samsung-odyssey8_1a58dbd4c02f4c8eb4a501a2b328af8b.jpg", "specifications": { "screenSize": "32 inches", "resolution": "QHD" } },
+    { "id": 4, "name": "Sony WH-1000XM4", "price": 350, "deviceID": 1, "brand": "Sony", "model": "WH-1000XM4", "image": "https://tainghechinhhang.vn/wp-content/uploads/2022/12/wh-1000xm4.png", "specifications": { "type": "Over-Ear", "features": ["Noise Cancelling", "Wireless"] } },
+    { "id": 5, "name": "Bose QuietComfort 35 II", "price": 300, "deviceID": 1, "brand": "Bose", "model": "QC35 II", "image": "https://techlandaudio.com.vn/wp-content/uploads/2019/06/bose-quiet-comfort-35-ii-5.jpg", "specifications": { "type": "Over-Ear", "features": ["Noise Cancelling", "Wireless"] } },
+    { "id": 6, "name": "Apple MacBook Pro", "price": 2400, "deviceID": 2, "brand": "Apple", "model": "M1", "image": "https://product.hstatic.net/1000259254/product/macbook_pro_gray_2020-1_68716744ec89402397283e3db6dca71a_grande.jpg", "specifications": { "screenSize": "13 inches", "ram": "16GB", "storage": "512GB SSD" } },
+    { "id": 7, "name": "Dell XPS 13", "price": 1500, "deviceID": 2, "brand": "Dell", "model": "9310", "image": "https://product.hstatic.net/1000331874/product/dell_xps_13_dc9a366cc90c495b9a3da844f2a08cb9_1024x1024.jpg", "specifications": { "screenSize": "13.4 inches", "ram": "16GB", "storage": "512GB SSD" } },
+    { "id": 8, "name": "HP Spectre x360", "price": 1400, "deviceID": 2, "brand": "HP", "model": "14", "image": "https://lapvip.vn/upload/products/original/hp-spectre-x360-16-2022-lapvip-4-1660041177.jpg", "specifications": { "screenSize": "14 inches", "ram": "16GB", "storage": "512GB SSD" } },
+    { "id": 9, "name": "iPhone 13", "price": 999, "deviceID": 3, "brand": "Apple", "model": "13", "image": "https://cdn.tgdd.vn/Products/Images/42/223602/Slider/RV-iphone-13-1020x570.jpg", "specifications": { "screenSize": "6.1 inches", "storage": "128GB" } },
+    { "id": 10, "name": "Samsung Galaxy S21", "price": 799, "deviceID": 3, "brand": "Samsung", "model": "S21", "image": "https://sonpixel.vn/wp-content/uploads/2024/04/S21-ultra-5g-den.webp", "specifications": { "screenSize": "6.2 inches", "storage": "128GB" } },
+    { "id": 11, "name": "Google Pixel 6", "price": 699, "deviceID": 3, "brand": "Google", "model": "6", "image": "https://cdn.xtmobile.vn/vnt_upload/product/04_2022/thumbs/(600x600)_crop_google-pixel-6-xtmobile.jpg", "specifications": { "screenSize": "6.4 inches", "storage": "128GB" } },
+    { "id": 12, "name": "iPad Pro", "price": 999, "deviceID": 2, "brand": "Apple", "model": "Pro", "image": "https://onewaymobile.vn/images/products/2021/07/09/original/ipad-pro-m1-11-wifi_1625793928.png", "specifications": { "screenSize": "11 inches", "storage": "256GB" } },
+    { "id": 13, "name": "Samsung Galaxy Tab S7", "price": 650, "deviceID": 2, "brand": "Samsung", "model": "Tab S7", "image": "https://images.samsung.com/is/image/samsung/p6pim/vn/feature/163701964/vn-feature-galaxy-tab-s7-fe-t733-530304962?$FB_TYPE_A_MO_JPG$", "specifications": { "screenSize": "11 inches", "storage": "128GB" } }
+  ]
+}
