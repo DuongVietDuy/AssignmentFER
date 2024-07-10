@@ -6,15 +6,16 @@ import DepartmentList from './components/DepartmentList';
 import EmployeeList from './components/EmployeeList';
 import Search from './components/Search';
 import EmployeeDetail from './components/EmployeeDetail';
-import NavBars from './components/NavBars';
+
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
+import SignIn from './components/Login/SignIn';
+import SignUp from './components/Login/SignUp';
 
 const App = () => {
   return (
     <EmployeeProvider>
       <Router>
-        <NavBars />
         <Container className="mt-4">
           <Routes>
             <Route path='/' element={<HomePage />} />
@@ -27,13 +28,14 @@ const App = () => {
                   </Col>
                   <Col md={8}>
                     <h2>Products</h2>
-                    <Search />
                     <EmployeeList />
                   </Col>
                 </Row>
               }
             />
             <Route path="/detail/:id" element={<EmployeeDetail />} />
+            <Route path='/signin' element={<SignIn />} />
+            <Route path='/signup' element={<SignUp />} />
           </Routes>
         </Container>
         <Footer />
