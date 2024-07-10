@@ -1,8 +1,9 @@
 // src/components/Navbar.js
 import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container ,Form} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { DiApple } from 'react-icons/di';
+import Search from './Search';
 
 const NavBars = () => {
   return (
@@ -13,8 +14,11 @@ const NavBars = () => {
           DuxngBui Shop
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Form className="d-flex me-2" style={{ paddingTop: '10px' }}>
+            <Search /> 
+          </Form>
+          <Nav className="d-flex align-items-center">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/shop">Shop</Nav.Link>
             <Nav.Link as={Link} to="/about">
