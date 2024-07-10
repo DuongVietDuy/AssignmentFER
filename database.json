@@ -18,5 +18,13 @@
     { "id": 11, "name": "Google Pixel 6", "price": 699, "deviceID": 3, "brand": "Google", "model": "6", "image": "https://cdn.xtmobile.vn/vnt_upload/product/04_2022/thumbs/(600x600)_crop_google-pixel-6-xtmobile.jpg", "specifications": { "screenSize": "6.4 inches", "storage": "128GB" } },
     { "id": 12, "name": "iPad Pro", "price": 999, "deviceID": 2, "brand": "Apple", "model": "Pro", "image": "https://onewaymobile.vn/images/products/2021/07/09/original/ipad-pro-m1-11-wifi_1625793928.png", "specifications": { "screenSize": "11 inches", "storage": "256GB" } },
     { "id": 13, "name": "Samsung Galaxy Tab S7", "price": 650, "deviceID": 2, "brand": "Samsung", "model": "Tab S7", "image": "https://images.samsung.com/is/image/samsung/p6pim/vn/feature/163701964/vn-feature-galaxy-tab-s7-fe-t733-530304962?$FB_TYPE_A_MO_JPG$", "specifications": { "screenSize": "11 inches", "storage": "128GB" } }
+  ],
+  "users": [
+    { "id": "1", "number": "0961586589", "username": "user1", "email": "duongvdhe173014@gmail.com", "password": "password1", "role": "2"},
+    { "id": "3", "number": "0961586588", "username": "user3", "email": "duongvdhe173014@gmail.com", "password": "password3", "role": "1"},
+    { "id": "4", "number": "0961591555", "username": "duong", "email": "duongvdhe173014@gmail.com", "password": "duonguong", "role": "1"},
+    { "id": "5", "number": "0918260603", "username": "marisboy2606", "email": "ChiTQHE171032@fpt.edu.vn", "password": "chiquynh2606", "role": "1"},
+    { "id": "6", "number": "0918260603", "username": "marisboy2606", "email": "marisboy2606@gmail.com","password": "chiquynh2606", "role": "1"},
+    { "id": "7", "number": "0918260603", "username": "marisboy2606", "email": "ChiTQHE171032@fpt.edu.vn", "password": "chiquynh2606", "role": "1"}
   ]
 }
