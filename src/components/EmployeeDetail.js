@@ -24,7 +24,7 @@ const EmployeeDetail = () => {
 
   return (
     <div>
-      <Button variant="secondary" onClick={() => navigate('/')}>
+      <Button variant="secondary" onClick={() => navigate('/shop')}>
         Back to List
       </Button>
       <Card>
