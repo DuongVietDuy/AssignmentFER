@@ -5,8 +5,8 @@ import NewProductList from './NewProductList'
 
 const HomePage = () => {
   return (
-    <NavBars />
     <>
+     <NavBars />
       <AppCarousel />      
         <NewProductList />
     </>
