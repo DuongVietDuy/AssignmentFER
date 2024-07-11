@@ -9,8 +9,8 @@ import EmployeeDetail from './components/EmployeeDetail';
 import ShopPage from './components/ShopPage';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
-import SignIn from './components/Login/SignIn';
-import SignUp from './components/Login/SignUp';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 import Cart from './pages/Cart';
 
 const App = () => {
