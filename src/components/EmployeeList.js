@@ -42,7 +42,7 @@ const EmployeeList = () => {
               <Card.Body>
                 <Card.Title>{employee.name}</Card.Title>
                 <Card.Text>Price: {employee.price}</Card.Text>
-                <Card.Text>deviceID: {employee.deviceID}</Card.Text>
+                <Card.Text>DeviceID: {employee.deviceID}</Card.Text>
                 <Card.Text>Brand: {employee.brand}</Card.Text>
                 <Button as={Link} to={`/detail/${employee.id}`} variant="danger">Detail</Button>
                 <Button variant="dark" onClick={() => handleAdd(employee)}>Add to Cart</Button>
