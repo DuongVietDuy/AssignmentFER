@@ -4,9 +4,14 @@ import { Link } from 'react-router-dom';
 import { EmployeeContext } from '../context/EmployeeContext';
 
 const EmployeeList = () => {
-  const { employees, selectedDepartment, searchTerm } = useContext(EmployeeContext);
+  const { employees, selectedDepartment, searchTerm, addToCart } = useContext(EmployeeContext);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
+
+  const handleAdd = (product1) => {
+    const quantity = 1;
+    addToCart(product1, quantity);
+  };
 
   // Lọc danh sách nhân viên
   const filteredEmployees = employees.filter(employee => {
@@ -33,13 +38,14 @@ const EmployeeList = () => {
         {currentEmployees.map(employee => (
           <Col key={employee.id} sm={12} md={6} lg={4} className="mb-4">
             <Card>
-              <Card.Img variant="top" src={employee.image || 'https://via.placeholder.com/150'} alt="Employee" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+              <Card.Img variant="top" src={employee.image || 'https://via.placeholder.com/150'} alt="Employee" style={{ width: '100%', height: '200px', objectFit: 'contain' }} />
               <Card.Body>
                 <Card.Title>{employee.name}</Card.Title>
                 <Card.Text>Price: {employee.price}</Card.Text>
                 <Card.Text>deviceID: {employee.deviceID}</Card.Text>
                 <Card.Text>Brand: {employee.brand}</Card.Text>
-                <Button as={Link} to={`/detail/${employee.id}`} variant="info" size="sm">Detail</Button>
+                <Button as={Link} to={`/detail/${employee.id}`} variant="danger">Detail</Button>
+                <Button variant="dark" onClick={() => handleAdd(employee)}>Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
