@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import SignIn from './components/Login/SignIn';
 import SignUp from './components/Login/SignUp';
+import Cart from './pages/Cart';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/detail/:id" element={<EmployeeDetail />} />
             <Route path='/signin' element={<SignIn />} />
             <Route path='/signup' element={<SignUp />} />
+            <Route path='/cart' element={<Cart />} />
           </Routes>
         </Container>
         <Footer />
