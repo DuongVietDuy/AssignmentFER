@@ -10,25 +10,12 @@ const EmployeeProvider = ({ children }) => {
   const [selectedDepartment, setSelectedDepartment] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const [cart, setCart] = useState([]);
-  const [employeeCart, setEmployeeCart] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => {
       const deptResponse = await axios.get('http://localhost:9999/device');
       setDepartments(deptResponse.data);
       const empResponse = await axios.get('http://localhost:9999/products');
       setEmployees(empResponse.data);
-      // const cartResponse = await axios.get('http://localhost:9999/cart');
-      // setCart(cartResponse.data);
-
-      // employees.map(employee => (
-      //   axios.post('http://localhost:9999/cart', {
-      //     id: "" + (cart.length + 1),
-      //     classId : employee.id,
-      //     quantity : 0
-      //   })
-      // ));
     };
     fetchData();
   }, []);
