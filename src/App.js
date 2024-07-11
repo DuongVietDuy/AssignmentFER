@@ -6,7 +6,7 @@ import DepartmentList from './components/DepartmentList';
 import EmployeeList from './components/EmployeeList';
 import Search from './components/Search';
 import EmployeeDetail from './components/EmployeeDetail';
-
+import ShopPage from './components/ShopPage';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import SignIn from './components/Login/SignIn';
@@ -19,20 +19,7 @@ const App = () => {
         <Container className="mt-4">
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path="/shop" element=
-              {
-                <Row>
-                  <Col md={4}>
-                    <h2>Devices</h2>
-                    <DepartmentList/>
-                  </Col>
-                  <Col md={8}>
-                    <h2>Products</h2>
-                    <EmployeeList />
-                  </Col>
-                </Row>
-              }
-            />
+            <Route path="/shop" element={ <ShopPage />} />
             <Route path="/detail/:id" element={<EmployeeDetail />} />
             <Route path='/signin' element={<SignIn />} />
             <Route path='/signup' element={<SignUp />} />
